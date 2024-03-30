@@ -75,12 +75,7 @@
     description = "Armaan Seydi";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-      firefox
-      vlc
-      vscode
-      qv2ray
-      discord
-      telegram-desktop
+    #  firefox
     #  thunderbird
     ];
   };
@@ -101,7 +96,6 @@
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
-    git
     v2ray
     xray
     neofetch
@@ -128,12 +122,7 @@
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 
-  # This value determines the NixOS release from which the default
-  # settings for stateful data, like file locations and database versions
-  # on your system were taken. It‘s perfectly fine and recommended to leave
-  # this value at the release version of the first install of this system.
-  # Before changing this value read the documentation for this option
-  # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "23.11"; # Did you read the comment?
+  # Version of NixOS, DO NOT CHANGE THIS!
+  system.stateVersion = "23.11"; # https://nixos.org/nixos/options.html
 
 }
