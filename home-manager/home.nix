@@ -1,6 +1,13 @@
 { config, pkgs, ... }:
 
-{
+{ 
+
+  imports =
+    [ 
+      ../modules/git.nix
+      ../modules/kitty.nix
+    ];
+
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "armowon";
@@ -17,6 +24,7 @@
   home.packages = with pkgs; [
     firefox
     vlc
+    kitty
     vscode
     qv2ray
     discord
