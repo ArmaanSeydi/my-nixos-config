@@ -24,7 +24,7 @@
   home.packages = with pkgs; [
     firefox
     vlc
-    kitty
+    # kitty
     vscode
     qv2ray
     discord
