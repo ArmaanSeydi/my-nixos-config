@@ -4,7 +4,7 @@
 
 	home.packages = with pkgs; [ kitty ];
 
-  programs.kitty = {
+  programs.kitty = { 
 	  enable = true;
 
 	  font = {
