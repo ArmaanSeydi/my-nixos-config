@@ -20,6 +20,10 @@
   # Allowing unfree pkgs
   nixpkgs.config.allowUnfree = true;
 
+  # Bash Configs
+  programs.bash.enable = true;
+  programs.bash.bashrcExtra = ''PS1='\[\e[96m\]\u\[\e[0m\] \[\e[1m\]@\[\e[0m\] \[\e[96m\]\h\[\e[0m\] \[\e[1m\]:\[\e[0m\] \[\e[32m\]\w\[\e[0m\] \[\e[1m\]-\[\e[0m\] \[\e[93m\]\t\n\[\e[0;1m\]\$\[\e[0m\] ' '';
+
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
