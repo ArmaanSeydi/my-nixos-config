@@ -6,7 +6,7 @@
     [ 
       ../modules/git.nix
       ../modules/kitty.nix
-
+      ../modules/gnome-extentions.nix
     ];
 
   # Home Manager needs a bit of information about you and the paths it should
@@ -15,7 +15,7 @@
   home.homeDirectory = "/home/armowon";
 
   # Home-manager version. DO NOT CHANGE THIS!
-  home.stateVersion = "23.11";
+  home.stateVersion = "24.05";
 
   # Allowing unfree pkgs
   nixpkgs.config.allowUnfree = true;
@@ -31,17 +31,7 @@
     vlc
     vscode
     qv2ray
-    discord
     telegram-desktop
-    ir-standard-fonts
-    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
-
-    # # You can also create simple shell scripts directly inside your
-    # # configuration. For example, this adds a command 'my-hello' to your
-    # # environment:
-    # (pkgs.writeShellScriptBin "my-hello" ''
-    #   echo "Hello, ${config.home.username}!"
-    # '')
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -75,7 +65,7 @@
   #  /etc/profiles/per-user/armowon/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    EDITOR = "code";
   };
 
   # Let Home Manager install and manage itself.

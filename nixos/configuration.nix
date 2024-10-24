@@ -72,11 +72,11 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.armowon = {
     isNormalUser = true;
-    description = "Armaan Seydi";
+    description = "ArmOwOn";
     extraGroups = [ "networkmanager" "wheel" ];
+    initialPassword = "yourDesiredPassword";
     packages = with pkgs; [
-    #  firefox
-    #  thunderbird
+
     ];
   };
 
@@ -99,8 +99,8 @@
     v2ray
     xray
     neofetch
-    gnome.gnome-tweaks
-    gnome-menus
+    ir-standard-fonts
+    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -123,6 +123,6 @@
   # networking.firewall.enable = false;
 
   # Version of NixOS, DO NOT CHANGE THIS!
-  system.stateVersion = "23.11"; # https://nixos.org/nixos/options.html
+  system.stateVersion = "24.05"; # https://nixos.org/nixos/options.html
 
 }

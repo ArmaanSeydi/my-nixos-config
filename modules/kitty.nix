@@ -24,7 +24,7 @@
 			inactive_border_color = "#928374";
 			cursor_shape = "block";
 			shell_integration = "enabled no-cursor";
-		#	hide_window_decorations = "yes";
+			# hide_window_decorations = "yes";
 			window_margin_width = 4;
 			window_padding_width = 4;
 			tab_bar_edge = "top";
