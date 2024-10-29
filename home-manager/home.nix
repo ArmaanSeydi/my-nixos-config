@@ -2,10 +2,10 @@
 
 { 
   imports = [ 
-    ../git.nix
-    # ../modules/kitty.nix
-    ../modules/gnome-extensions.nix
-    ../modules/hyprland.nix
+    ../modules/git/git.nix
+    ../modules/kitty/kitty.nix
+    ../modules/gnome-extensions/gnome-extensions.nix
+    ../modules/hyprland/hyprland.nix
   ];
 
   home.username = "armowon";
