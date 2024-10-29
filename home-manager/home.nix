@@ -6,6 +6,7 @@
     ../modules/kitty/kitty.nix
     ../modules/gnome-extensions/gnome-extensions.nix
     ../modules/hyprland/hyprland.nix
+    ../modules/wofi/wofi.nix
   ];
 
   home.username = "armowon";
@@ -22,9 +23,15 @@
     vscode
     qv2ray
     telegram-desktop
+
+    # Fonts
+    ir-standard-fonts
+    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+    corefonts
+    vistafonts
+    font-awesome
   ];
 
-  nixpkgs.config.allowUnfree = true;
 
   home.sessionVariables = {
     EDITOR = "code";
@@ -38,5 +45,6 @@
 
   # Home-manager version. DO NOT CHANGE THIS!
   home.stateVersion = "24.05";
+  nixpkgs.config.allowUnfree = true;
 
 }

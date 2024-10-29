@@ -97,8 +97,7 @@
     v2ray
     xray
     neofetch
-    ir-standard-fonts
-    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+    
     #hypr
     wofi
     waybar
