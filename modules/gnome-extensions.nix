@@ -4,8 +4,8 @@
   home.packages = with pkgs; [ 
     #Tools
     dconf2nix
-    gnome.gnome-shell-extensions
-    gnome.gnome-tweaks
+    gnome-shell-extensions
+    gnome-tweaks
     gnome-menus
     #Extentions
     gnomeExtensions.appindicator

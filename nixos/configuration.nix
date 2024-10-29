@@ -35,6 +35,7 @@
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
+  
 
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
@@ -50,7 +51,7 @@
   services.printing.enable = true;
 
   # Enable sound with pipewire.
-  sound.enable = true;
+  # sound.enable = true;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
@@ -72,12 +73,9 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.armowon = {
     isNormalUser = true;
-    description = "ArmOwOn";
+    description = "Armaan Seydi";
     extraGroups = [ "networkmanager" "wheel" ];
-    initialPassword = "yourDesiredPassword";
-    packages = with pkgs; [
-
-    ];
+    initialPassword = "'";
   };
 
   # Enable automatic login for the user.
@@ -101,7 +99,15 @@
     neofetch
     ir-standard-fonts
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+    #hypr
+    wofi
+    waybar
   ];
+
+  programs.hyprland.enable = true;
+
+  # xdg.portal.enable = true;
+  # xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
