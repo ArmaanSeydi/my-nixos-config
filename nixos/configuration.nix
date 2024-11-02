@@ -97,7 +97,9 @@
     v2ray
     xray
     neofetch
-    
+    killall
+    aircrack-ng
+    python3
     #hypr
     wofi
     waybar

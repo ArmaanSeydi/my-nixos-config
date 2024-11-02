@@ -7,6 +7,8 @@
     ../modules/gnome-extensions/gnome-extensions.nix
     ../modules/hyprland/hyprland.nix
     ../modules/wofi/wofi.nix
+    ../modules/waybar/waybar.nix
+    ../modules/vscode/vscode.nix
   ];
 
   home.username = "armowon";
